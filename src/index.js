@@ -9,7 +9,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
   <React.StrictMode>
-
+    
+      {/* // Envuelves los componentes que quieres que usen el contexto en tu componente provider */}
       <ChatProvider>
           <App />
       </ChatProvider>

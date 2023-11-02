@@ -1,7 +1,6 @@
-import { initializeApp } from "firebase/app";
-import { getFirestore } from "firebase/firestore";
-import { GoogleAuthProvider } from "firebase/auth";
-import { getAuth } from "firebase/auth";
+import  firebase  from "firebase/app";
+import  "firebase/firestore";
+import  "firebase/auth";
 
 
 // Your web app's Firebase configuration
@@ -15,15 +14,15 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const app = initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
 // Inicializar base de datos
-const db = getFirestore(app);
+const db = firebase.firestore();
 
 // Provider
-const provider = new GoogleAuthProvider();
+const provider = new firebase.auth.GoogleAuthProvider();
 
 //AUTH
-const auth = getAuth();
+const auth = firebase.auth();
 
 export {db, provider, auth}
