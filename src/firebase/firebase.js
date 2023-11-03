@@ -3,6 +3,7 @@ import  "firebase/firestore";
 import  "firebase/auth";
 
 
+
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyA9L7lLEeuj-vwLw73T0mRwy_bSTVBmdXg",
@@ -18,6 +19,7 @@ firebase.initializeApp(firebaseConfig);
 
 // Inicializar base de datos
 const db = firebase.firestore();
+
 
 // Provider
 const provider = new firebase.auth.GoogleAuthProvider();
